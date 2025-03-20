@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Failed step
+      - name: pass step
         run: |
-          echo "I will fail"
-          exit 1
+          echo "I will pass"
+          exit 0
 
       - name: Say Goodbye
         if: always()  # Ensures this step runs even if the previous step fails
