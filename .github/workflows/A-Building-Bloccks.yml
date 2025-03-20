@@ -22,8 +22,9 @@ jobs:
           exit 1
 
       - name: Say Goodbye
-    
+        if: always()  # Ensures this step runs even if the previous step fails
         run: echo "Goodbye"
+
            
 
        
